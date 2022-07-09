@@ -25,7 +25,7 @@ const Searchscreen = ({ data, setData, searchTerm }) => {
     useEffect(() => {
         if (!searchTerm) return;
         const fetchResults = async () => {
-            const searchUrl = resultsWebType ? `${BASE_URL}key=${API_KEY}&cx=${ENGINE_ID}&q=${searchTerm}` : `${BASE_URL}key=${API_KEY}&cx=${ENGINE_ID}&q=${searchTerm}&searchType=image`
+            const searchUrl = resultsWebType ? `${BASE_URL}key=https://cse.google.com/cse?cx=362222c87e6e3d65e${API_KEY}&cx=AIzaSyC7HubpoGOcQaf3kAHzpyT1JNFiyUf0yBw${ENGINE_ID}&q=362222c87e6e3d65e${searchTerm}` : `${BASE_URL}key=https://cse.google.com/cse?cx=362222c87e6e3d65e${API_KEY}&cx=AIzaSyC7HubpoGOcQaf3kAHzpyT1JNFiyUf0yBw${ENGINE_ID}&q=362222c87e6e3d65e${searchTerm}&searchType=image`
             const response = await fetch(searchUrl);
             const data = await response.json();
             setData((prevState) => {

@@ -1,5 +1,5 @@
 # Brave search engine clone built using React JS
- App can be accessed at https://rjcb.github.io/react-brave-clone/
+ App can be accessed at 
  
 This is a Brave search engine clone(visually), however, the api used to fetch the results is Google's custom-search api. This api returns Web and Image results for upto a maximum of 10 results per query.
 
